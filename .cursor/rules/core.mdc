@@ -1,0 +1,12 @@
+---
+description: Core engineering workflow for every task in this repo
+alwaysApply: true
+---
+
+# Core workflow
+
+- Read `AGENTS.md`, then `docs/APP_CONCEPT.md` and `docs/mockups/`. Keep **Project facts** accurate; fill them from the repo if empty.
+- Stack: Vue 3 + TS (`<script setup lang="ts">`), Tailwind v4, Router, Pinia, Vite, feature folders, `dev` / `production` (only `.env.dev` + `.env.example`). PWA only when required.
+- Implement in code; small focused diffs. Do not invent requirements. Reuse existing patterns.
+- No secrets in client / `VITE_*` / bundles. Never commit `.env`, keys, credentials, or `node_modules`.
+- Scaffold / complete-app / backend proposal: follow `.cursor/rules/new-app.mdc`. Do not add extra docs or comments unless needed.

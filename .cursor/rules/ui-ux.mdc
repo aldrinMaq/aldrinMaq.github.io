@@ -1,0 +1,29 @@
+---
+description: Mockup baseline; requested UI wins; mobile-first UX
+globs: "**/*.{html,css,vue,js,ts}"
+alwaysApply: false
+---
+
+# UI / UX
+
+The HTML mockup is the **starting look**, not a lock. If Aldrin asks to add, move, or change UI not in the mockup, **do it**. Match type, color, radius, spacing. Do not invent extra chrome.
+
+After a lasting UI change, note it in `docs/APP_CONCEPT.md` (Screens / flows).
+
+## Mobile first
+
+- Phone layout first (~360–430px). Unprefixed Tailwind = mobile; `sm:`/`md:`/`lg:` only for larger screens.
+- Single column on mobile. Primary actions in thumb reach. No hover-only actions. Viewport: `width=device-width, initial-scale=1`. No horizontal scroll.
+
+## Safe areas / viewport
+
+- Prefer `min-h-dvh` over `100vh`. Pad fixed top/bottom with `env(safe-area-inset-*)` (e.g. `pt-[env(safe-area-inset-top)]`, `pb-[max(1rem,env(safe-area-inset-bottom))]`).
+- One scrollable `<main>` between header and bottom nav; reserve space for fixed chrome.
+- If PWA: `viewport-fit=cover`, matching `theme-color`, safe-area on the app shell from the PWA commit (see `vue.mdc` / `new-app.mdc`).
+
+## Building UI
+
+- Reuse mockup visual language. Share components only after a second screen needs them.
+- One clear primary action per section. Touch targets ~44px. Labels on inputs; field-level errors.
+- Submit buttons: disable + loading while in flight. Destructive actions need confirm.
+- Focus ring on tab; respect `prefers-reduced-motion`. Do not rely on color alone.

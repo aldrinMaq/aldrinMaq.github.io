@@ -1,0 +1,35 @@
+---
+description: App profiles — only .env.dev and .env.example; production has no committed env file
+globs: ".env*,vite.config.*,package.json"
+alwaysApply: false
+---
+
+# Profiles
+
+Two profiles. **dev** = laptop and online staging (fixtures on). **production** = real users (fixtures off).
+
+Only two committed env files: `.env.dev` and `.env.example`. Do **not** add `.env.development` or `.env.production`.
+
+Do **not** use Vite `--mode local` (`.env.local` is a reserved gitignored override).
+
+| Profile | Where | Test data | Vite `--mode` | Command |
+| --- | --- | --- | --- | --- |
+| `dev` | Device *or* staging URL | Yes | `dev` | `npm run dev` / `npm run build:dev` |
+| `production` | Real users | **No** | `production` | `npm run build` |
+
+## Env files (commit these; no secrets)
+
+`.env.dev` → `VITE_APP_ENV=dev` and `VITE_USE_FIXTURES=true`  
+`.env.example` documents the same keys (do not enable fixtures by default for prod).
+
+Scripts must pass `--mode dev` so Vite loads `.env.dev`. Plain `vite build` is production mode and does **not** load `.env.dev`.
+
+**Production:** Vite default `production` mode with **no** committed env file. Fixtures stay off because `VITE_USE_FIXTURES` is unset/false — do not invent `.env.production`.
+
+Gitignore: `.env`, `.env.local`, `.env.*.local`. Whitelist only `!.env.example` and `!.env.dev`.
+
+## Test data
+
+- Fixtures in `features/<name>/fixtures.ts` (or `shared/fixtures/` if shared).
+- Load only via feature `api.ts` / store when `VITE_USE_FIXTURES === 'true'`.
+- Production must never seed users or dummy records.

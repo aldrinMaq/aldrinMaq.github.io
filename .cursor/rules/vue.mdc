@@ -1,0 +1,45 @@
+---
+description: Vue frontend — TypeScript, feature folders, API seam; PWA only when required
+globs: src/**/*.{vue,ts,css}
+alwaysApply: false
+---
+
+# Vue
+
+- Vue 3 + TypeScript. `<script setup lang="ts">`. No Options API unless a file already uses it.
+- Tailwind v4 only, **mobile-first**: unprefixed utilities = phone; `md:`/`lg:` = larger screens. Convert mockup look to utilities; do not paste Canvas inline CSS into Vue.
+- Path aliases: `@/app`, `@/features`, `@/shared`.
+- **PWA only if Aldrin said it is required.** Then add `vite-plugin-pwa`, web manifest (`display: standalone`, `theme-color`), 192 and 512 icons, offline fallback, `viewport-fit=cover` in `index.html`, and a root app shell whose fixed top/bottom chrome uses safe-area insets (see `ui-ux.mdc`). Until then, do not add a service worker — but still use safe-area-aware bottom/top padding on fixed nav when building mobile layouts (browser chrome overlaps the same way in the tab).
+
+```vue
+<script setup lang="ts">
+import { ref } from 'vue'
+</script>
+```
+
+## Feature-based folders
+
+Group by capability. Kebab-case feature names. Other features import only from `index.ts`.
+
+```
+src/
+  app/
+  features/<name>/
+    components/
+    views/
+    stores/
+    api.ts             # only network/fixture access
+    fixtures.ts        # dev test data
+    routes.ts
+    types.ts
+    index.ts
+  shared/              # used by 2+ features only
+    components/
+    composables/
+    api/               # shared HTTP wrapper if needed
+    fixtures/
+    assets/
+  router/
+```
+
+Views talk to Pinia; Pinia talks to `api.ts`. No `fetch` in components. `api.ts` returns fixtures when `VITE_USE_FIXTURES === 'true'`, otherwise the real HTTP API.

@@ -1,0 +1,30 @@
+---
+description: Security defaults — client is untrusted; protect every sensitive endpoint. Use when adding auth, APIs, backends, or handling secrets.
+alwaysApply: false
+---
+
+# Security
+
+Nothing is hack-proof. Treat the Vue app as public. **All real checks happen on the server.**
+
+## Frontend
+
+- Never put secrets, API keys, or DB credentials in Vue, `VITE_*` env vars, or client bundles (including a PWA).
+- Do not use `v-html` with user or API content. Prefer text interpolation.
+- Vue route guards and hidden buttons are UX only — not security.
+- Prefer httpOnly + Secure + SameSite cookies for sessions. Do not store long-lived tokens in `localStorage`.
+- Load fixtures only when `VITE_USE_FIXTURES === 'true'`. Production must not default fixtures on.
+
+## Endpoints (when a backend exists)
+
+Every sensitive or mutating route must:
+
+1. **Authenticate** — reject anonymous callers.
+2. **Authorize** — this user may touch *this* resource (no trusting client IDs alone).
+3. **Validate** — schema-check body, query, params; reject unknown fields.
+4. **Parameterized queries / ORM bind** — no string-built SQL or shell.
+5. **Rate-limit** auth and write routes.
+6. **CORS allowlist** the real frontend origin only. No `*`.
+7. **Least data** — no stack traces, hashes, or other users’ fields.
+
+HTTPS in production. Log auth failures without logging secrets or tokens.

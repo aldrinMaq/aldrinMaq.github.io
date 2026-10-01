@@ -1,0 +1,19 @@
+---
+description: UI implementation for Vue and mockup HTML — no auto browser verify
+globs: "**/*.{html,css,vue,js,ts}"
+alwaysApply: false
+---
+
+# Web UI
+
+When changing UI, layout, styling, routing, Pinia state, or rendered data:
+
+- Implement **loading, empty, and error** states for every screen that lists or loads data.
+- Build **mobile first** (~390px). Use `dvh` and `env(safe-area-inset-*)` on fixed header / bottom nav / full-height shells.
+- If PWA: wire install/offline and safe-area on the app shell in code (do not open a browser to “check” unless asked).
+
+Match `docs/mockups/` unless Aldrin asked for different UI; keep the rest aligned with the mockup. Stay consistent with `docs/APP_CONCEPT.md`.
+
+## Browser / dev server (token save)
+
+Do **not** start `npm run dev`, open browser tools, take screenshots, or click through unless Aldrin explicitly asks. Default: implement, then stop.

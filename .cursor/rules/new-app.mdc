@@ -1,0 +1,31 @@
+---
+description: HTML mockup + concept first, then Vue scaffold; PWA and backend only when asked. Use when scaffolding, completing the app, or proposing a backend.
+alwaysApply: false
+---
+
+# New app flow
+
+1. **Docs** — Read `docs/APP_CONCEPT.md` and `docs/mockups/`. Move stray `.html` mockups into `docs/mockups/`. If `APP_CONCEPT.md` is empty, draft it from the mockup and confirm.
+2. **Scaffold** — Follow the recipe below. No backend. **No PWA** unless Aldrin said PWA is required.
+3. **Port UI** — Tokens → Tailwind theme; rebuild each screen in `src/features/<name>/`. Tailwind only; do not paste Canvas HTML/JS into `public/`. Explicit UI asks win over the mockup (same visual language). List/detail: loading, empty, error. Fixtures via `api.ts` only. Do not restyle into a generic AI/SaaS look.
+4. **PWA (only if required)** — `vite-plugin-pwa`, manifest (`display: standalone`, `theme-color`), 192/512 icons, offline fallback, `viewport-fit=cover`, safe-area on app shell — own commit chunk. Even without PWA, use `dvh` + safe-area on fixed chrome.
+5. **Backend later** — Fill the proposal checklist below. Stop. No backend code until Aldrin confirms.
+
+When Aldrin says **complete the app**, commit after each step and each screen. Single feature/bugfix: do **not** auto-commit.
+
+## Scaffold recipe
+
+- Vue 3 + Vite + TypeScript + Tailwind **v4** + Vue Router + Pinia; feature folders.
+- Scripts: `"dev": "vite --mode dev"`, `"build:dev": "vite build --mode dev"`, `"build": "vite build"`.
+- Env: only `.env.dev` + `.env.example`. Never `.env.development`, `.env.production`, or `--mode local`.
+- Aliases: `@/app`, `@/features`, `@/shared`.
+
+## Backend proposal checklist
+
+Fill each line, then wait:
+
+- Option name + why (Spring Boot yes/no)
+- Hosting + rough monthly cost
+- What Aldrin operates
+- Auth approach
+- Database

@@ -1,0 +1,15 @@
+---
+description: Clean code — small units, feature isolation, names over comments
+alwaysApply: true
+---
+
+# Clean code
+
+- Names say what and why (`isSessionExpired`, not `flag2`). Types over comments. Do not comment what the code already shows.
+- One component / function / store action, one job. If it needs “and” in the name, split it.
+- Feature isolation: other features import only from `features/<name>/index.ts`. No deep imports into another feature’s files.
+- Put code in `shared/` only after a second feature needs it. Do not abstract on first use.
+- Keep nesting shallow. Prefer early returns over else-pyramids.
+- Handle errors where you can do something useful; do not empty `catch`.
+- Delete dead code. Do not leave unused props, routes, or commented-out blocks.
+- Match existing style. No drive-by refactors outside the current chunk.

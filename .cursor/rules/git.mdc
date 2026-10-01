@@ -1,0 +1,43 @@
+---
+description: Commit only on full-app builds or when asked; app .gitignore (not in this kit)
+alwaysApply: true
+---
+
+# Git
+
+**Default: do not auto-commit.** Feature tweaks, bugs, one-screen asks, refactors — leave changes uncommitted unless Aldrin says to commit.
+
+**When Aldrin says complete the app**, chunk-commit each logical step (scaffold → screens → optional PWA) without waiting for a separate “please commit”. Otherwise do not auto-commit. Push still waits.
+
+Example chunks (full-app only): scaffold + env profiles → docs → one screen at a time → PWA (only if required).
+
+## Ignore files
+
+`.gitignore` lives in the **Vue app**, not in this kit. Aldrin often adds it when initializing the project. If the app already has one, keep it and only patch missing entries. If it is missing, create it before the first commit. Include at least:
+
+```
+node_modules
+dist
+dist-ssr
+dev-dist
+.env
+.env.local
+.env.*.local
+!.env.example
+!.env.dev
+*.log
+.DS_Store
+Thumbs.db
+.idea
+coverage
+.vite
+```
+
+Never `git add -f` ignored files. Never stage `node_modules`, `dist`, or secrets.
+
+## How to commit
+
+1. `git status` and `git diff` (and `git log` if history exists).
+2. Stage only this chunk.
+3. 1–2 sentence message that explains **why**.
+4. Never update git config, skip hooks, or force-push to `main`/`master`.

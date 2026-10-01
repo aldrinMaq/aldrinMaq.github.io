@@ -1,0 +1,23 @@
+---
+description: Avoid generic AI/SaaS UI — extract tokens from the mockup, keep the UI product-dense
+globs: "**/*.{html,css,vue,js,ts}"
+alwaysApply: false
+---
+
+# Visual craft
+
+Do **not** make it look like a vibe-coded demo (purple/indigo gradients, glass, blur orbs, glow, Inter-on-white heroes, oversized soft cards, “Welcome to your dashboard”).
+
+## Tokens first
+
+From the mockup (and `docs/APP_CONCEPT.md` **Visual** if filled): 1 font (or 2 if paired), small palette (background, surface, text, muted, accent, danger), one radius, one shadow (or none). Put in the Tailwind theme. No extra colors or second font.
+
+## Restraint
+
+- Flat or one subtle shadow. No mesh/glow/glass/blobs unless literally in the mockup.
+- Product density: `gap-3` / `p-4`, not empty `p-12` cards.
+- Type: title / body / caption. One icon set. Copy from mockup or concept — no stock marketing phrases.
+
+## Vibe-coded mockup
+
+Default: **port faithfully**. De-vibe only if Aldrin asks or fills **Visual**: keep screens/flows; drop tropes; apply tokens; note the pass in `docs/APP_CONCEPT.md`.
