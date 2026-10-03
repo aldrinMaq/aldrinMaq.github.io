@@ -10,7 +10,7 @@ Aldrin Maquiling — Portfolio (`aldrinMaq.github.io`)
 
 ## One-liner
 
-Static dark-theme portfolio showcasing fullstack work, commercial experience at mykuan.app, freelance projects, and personal/academic apps.
+Static dark-theme portfolio showcasing fullstack work, commercial experience at mykuan.app, and personal/academic apps.
 
 ## Vision / problem
 
@@ -23,7 +23,7 @@ Hiring managers, clients, and collaborators evaluating Aldrin for fullstack / we
 ## Main flows
 
 1. Land on hero → skim positioning
-2. Read experience (mykuan + freelance)
+2. Read experience (mykuan.app)
 3. Browse projects → open live demos
 4. Check skills / education → contact or download resume
 
@@ -47,7 +47,7 @@ Single page sections: Hero, Experience, Projects, Skills, Education & Honors, Co
 ## Constraints
 
 - Keep existing visual language unless a redesign is requested
-- Content must stay consistent with `Maquiling-Aldrin-Resume.pdf`
+- Content must stay consistent with `MAQUILING_ALDRIN_RESUME.pdf`
 
 ## Visual
 
@@ -59,4 +59,3 @@ Single page sections: Hero, Experience, Projects, Skills, Education & Honors, Co
 ## Notes
 
 - Commercial product: KUAN Store / mykuan.app
-- Recent freelance: Courageous Public Health (WordPress/Elementor)

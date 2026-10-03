@@ -11,7 +11,7 @@ Aldrin — software engineer. Prefer working directly in code: create, debug, it
 This repo is a **static personal portfolio** (GitHub Pages), not a Vue app scaffold:
 
 - Single-page `index.html` (Tailwind CDN + Font Awesome)
-- Resume PDF: `Maquiling-Aldrin-Resume.pdf`
+- Resume PDF: `MAQUILING_ALDRIN_RESUME.pdf`
 - Hosted as `aldrinMaq.github.io`
 
 Keep changes content-focused unless Aldrin asks for a redesign or a Vue rewrite.
@@ -19,7 +19,7 @@ Keep changes content-focused unless Aldrin asks for a redesign or a Vue rewrite.
 ## How to work
 
 1. Fill **Project facts** if empty (infer from the repo).
-2. When resume content changes, treat `Maquiling-Aldrin-Resume.pdf` as the source of truth for roles, bullets, skills, education, and project blurbs.
+2. When resume content changes, treat `MAQUILING_ALDRIN_RESUME.pdf` as the source of truth for roles, bullets, skills, education, and project blurbs.
 3. Implement in code. Do not stop at a plan unless asked.
 4. Commits: see `.cursor/rules/git.mdc`. Never commit secrets.
 5. Do not push or change git config unless asked.
@@ -34,7 +34,7 @@ Keep changes content-focused unless Aldrin asks for a redesign or a Vue rewrite.
 - **Production:** GitHub Pages from this repo
 - **Test command:** (none)
 - **Lint / format command:** (none)
-- **Important paths:** `index.html`, `Maquiling-Aldrin-Resume.pdf`, `docs/APP_CONCEPT.md`
+- **Important paths:** `index.html`, `MAQUILING_ALDRIN_RESUME.pdf`, `docs/APP_CONCEPT.md`
 
 ## Do not
 
