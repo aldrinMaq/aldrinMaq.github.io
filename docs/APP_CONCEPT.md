@@ -31,6 +31,8 @@ Hiring managers, clients, and collaborators evaluating Aldrin for fullstack / we
 
 Single page sections: Hero, Experience, Projects, Skills, Education & Honors, Contact.
 
+Featured projects appear in this order: GoFindPro, WeatherCheck, RentHub, Dink Spot, Growgreen, YourCloud.
+
 ## Features
 
 - Resume-aligned copy for KUAN / mykuan.app
