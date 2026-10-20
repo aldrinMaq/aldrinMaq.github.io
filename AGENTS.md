@@ -28,9 +28,9 @@ Keep changes content-focused unless Aldrin asks for a redesign or a Vue rewrite.
 
 - **Name:** Aldrin Maquiling portfolio (`aldrinMaq.github.io`)
 - **What it does:** Personal portfolio site — experience, projects, skills, education, contact (source of truth: `docs/APP_CONCEPT.md`)
-- **Stack:** Static HTML + Tailwind CDN + Font Awesome + Google Fonts (Plus Jakarta Sans, JetBrains Mono)
-- **Package manager:** none
-- **Dev:** open `index.html` locally or via a simple static server
+- **Stack:** Static HTML + prebuilt Tailwind CSS v4 (`src/site.css` → `assets/site.css`, committed) + inline SVG icons + Google Fonts (Plus Jakarta Sans, JetBrains Mono)
+- **Package manager:** npm, only for the Tailwind CLI (`node_modules/` is git-ignored; the deployed site needs no build)
+- **Dev:** `npm install` once; after changing classes in `index.html`, run `npm run build:css`, then serve the folder with any static server
 - **Production:** GitHub Pages from this repo
 - **Test command:** (none)
 - **Lint / format command:** (none)

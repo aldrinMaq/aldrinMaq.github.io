@@ -1,0 +1,11 @@
+{
+  "name": "aldrinmaq-portfolio",
+  "private": true,
+  "scripts": {
+    "build:css": "tailwindcss -i src/site.css -o assets/site.css --minify"
+  },
+  "devDependencies": {
+    "@tailwindcss/cli": "4.1.11",
+    "tailwindcss": "4.1.11"
+  }
+}

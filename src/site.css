@@ -1,0 +1,60 @@
+/* Source for assets/site.css. Rebuild after changing classes in index.html: npm run build:css */
+@import "tailwindcss";
+@source "../index.html";
+
+@theme {
+    --color-dark-bg: #0a0a0c;
+    --color-dark-card: #121217;
+    --color-dark-border: #27272a;
+    --color-dark-muted: #a1a1aa;
+    --font-sans: 'Plus Jakarta Sans', ui-sans-serif, system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, monospace;
+}
+
+@layer base {
+    body::before {
+        content: "";
+        position: fixed;
+        inset: 0;
+        background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        background-size: 24px 24px;
+        pointer-events: none;
+        z-index: -1;
+    }
+    a:focus-visible, button:focus-visible, summary:focus-visible {
+        outline: 2px solid #34d399;
+        outline-offset: 4px;
+    }
+    header nav a[aria-current="location"] {
+        color: #34d399;
+        box-shadow: inset 0 -2px #34d399;
+    }
+    @media (prefers-reduced-motion: reduce) {
+        *, *::before, *::after {
+            scroll-behavior: auto !important;
+            animation-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+        }
+    }
+}
+
+@utility glass-nav {
+    background: rgba(10, 10, 12, 0.94);
+    @media (min-width: 768px) {
+        background: rgba(10, 10, 12, 0.75);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
+}
+
+/* Skip layout for below-the-fold sections until they near the viewport */
+@utility defer-render {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 900px;
+}
+
+@utility icon {
+    width: 1em;
+    height: 1em;
+    flex-shrink: 0;
+}

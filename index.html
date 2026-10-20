@@ -1,420 +1,407 @@
 <!DOCTYPE html>
-<html lang="en" class="dark scroll-smooth">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Aldrin Maquiling - Fullstack Web Developer with 3+ years building Java/Spring Boot backends and Vue.js/TypeScript frontends.">
-    <title>Aldrin Maquiling — Fullstack Web Developer</title>
+    <title>Aldrin Maquiling — Fullstack Developer (Java/Spring Boot + Vue.js)</title>
+    <meta name="description" content="Aldrin Maquiling is a fullstack developer with 3+ years building Java/Spring Boot backends and Vue.js/TypeScript frontends. Open to remote roles.">
+    <link rel="canonical" href="https://aldrinmaq.github.io/">
+    <meta name="theme-color" content="#0a0a0c">
+    <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            darkMode: 'class',
-            theme: {
-                extend: {
-                    colors: {
-                        dark: {
-                            bg: '#0a0a0c',
-                            card: '#121217',
-                            border: '#27272a',
-                            muted: '#a1a1aa'
-                        }
-                    }
-                }
-            }
-        }
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aldrinmaq.github.io/">
+    <meta property="og:title" content="Aldrin Maquiling — Fullstack Developer (Java/Spring Boot + Vue.js)">
+    <meta property="og:description" content="3+ years building REST APIs, reusable Vue.js UI, and automated tests. Live projects, resume, and contact.">
+    <meta property="og:image" content="https://aldrinmaq.github.io/assets/og-image.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" media="print" onload="this.media='all'">
+    <link rel="stylesheet" href="assets/site.css">
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Aldrin Maquiling",
+        "jobTitle": "Fullstack Developer",
+        "url": "https://aldrinmaq.github.io/",
+        "email": "mailto:maquiling.aa@gmail.com",
+        "sameAs": ["https://github.com/aldrinMaq"],
+        "knowsAbout": ["Java", "Spring Boot", "Vue.js", "TypeScript", "REST APIs", "Selenium"]
+    }
     </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        body { font-family: 'Plus Jakarta Sans', sans-serif; }
-        .font-mono { font-family: 'JetBrains Mono', monospace; }
-        .glass-nav {
-            background: rgba(10, 10, 12, 0.75);
-            backdrop-filter: blur(12px);
-            -webkit-backdrop-filter: blur(12px);
-        }
-        body::before {
-            content: "";
-            position: fixed;
-            top: 0; left: 0; width: 100vw; height: 100vh;
-            background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-            background-size: 24px 24px;
-            pointer-events: none;
-            z-index: -1;
-        }
-    </style>
 </head>
-<body class="bg-dark-bg text-zinc-100 antialiased selection:bg-emerald-500/30 selection:text-emerald-300 min-h-screen relative">
+<body class="bg-dark-bg text-zinc-100 font-sans antialiased selection:bg-emerald-500/30 selection:text-emerald-300 min-h-screen relative">
 
+<svg xmlns="http://www.w3.org/2000/svg" class="hidden" aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 16 16"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></symbol>
+    <symbol id="i-arrow-down" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M12 5v14M19 12l-7 7-7-7"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M7 7h10v10"/></symbol>
+    <symbol id="i-file" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zM14 2v6h6M16 13H8M16 17H8"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 5L2 7"/></g></symbol>
+</svg>
+
+<a href="#main" class="sr-only focus:not-sr-only focus:fixed focus:top-3 focus:left-3 focus:z-[60] focus:px-4 focus:py-2 focus:rounded-lg focus:bg-emerald-500 focus:text-zinc-950">Skip to content</a>
 <header class="fixed top-0 left-0 right-0 z-50 glass-nav border-b border-zinc-800/80">
-    <div class="max-w-6xl mx-auto px-6 h-16 flex items-center justify-between">
-        <a href="#" class="font-mono font-bold tracking-tight text-base text-emerald-400 flex items-center gap-2 hover:opacity-80 transition-opacity">
+    <div class="max-w-6xl mx-auto px-6 py-3 md:py-0 md:h-16 flex flex-wrap items-center justify-between gap-y-3">
+        <a href="#top" class="font-mono font-bold tracking-tight text-base text-emerald-400 flex items-center gap-2 hover:opacity-80 transition-opacity">
             <span class="text-xs px-2 py-0.5 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">AM</span>
-            aldrin.dev
+            Aldrin Maquiling
         </a>
 
-        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-zinc-400">
-            <a href="#experience" class="hover:text-emerald-400 transition-colors">Experience</a>
-            <a href="#projects" class="hover:text-emerald-400 transition-colors">Projects</a>
-            <a href="#skills" class="hover:text-emerald-400 transition-colors">Skills</a>
-            <a href="#about" class="hover:text-emerald-400 transition-colors">About</a>
+        <nav aria-label="Sections" class="order-3 w-full md:order-none md:w-auto flex items-center justify-between md:justify-start md:gap-8 text-xs md:text-sm font-medium text-zinc-300">
+            <a href="#experience" class="py-2 hover:text-emerald-400 transition-colors">Experience</a>
+            <a href="#projects" class="py-2 hover:text-emerald-400 transition-colors">Projects</a>
+            <a href="#skills" class="py-2 hover:text-emerald-400 transition-colors">Skills</a>
+            <a href="#about" class="py-2 hover:text-emerald-400 transition-colors">Education</a>
         </nav>
 
         <div class="flex items-center gap-3">
-            <a href="https://github.com/aldrinMaq" target="_blank" aria-label="GitHub Profile" class="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 flex items-center justify-center text-zinc-300 hover:text-emerald-400 hover:border-emerald-500/40 transition-all hidden sm:flex">
-                <i class="fab fa-github"></i>
+            <a href="https://github.com/aldrinMaq" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile" class="w-9 h-9 rounded-lg bg-zinc-900 border border-zinc-800 items-center justify-center text-zinc-300 hover:text-emerald-400 hover:border-emerald-500/40 transition-all hidden sm:flex">
+                <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
             </a>
-            <a href="#contact" class="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold text-sm transition-all shadow-[0_0_15px_rgba(16,185,129,0.2)] hover:shadow-[0_0_20px_rgba(16,185,129,0.4)]">
-                Let's Talk
+            <a href="#contact" class="px-4 py-2 rounded-lg bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold text-sm transition-colors">
+                Contact
             </a>
         </div>
     </div>
 </header>
 
-<main class="max-w-6xl mx-auto px-6 pt-32 pb-24">
+<main id="main" class="max-w-6xl mx-auto px-6 pt-32 md:pt-24 pb-24">
 
-    <section class="py-16 md:py-24 flex flex-col items-start justify-center min-h-[70vh]">
+    <section id="top" class="py-10 md:py-20 flex flex-col items-start justify-center scroll-mt-32">
         <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs font-mono mb-6">
-            <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse shadow-[0_0_8px_rgba(16,185,129,0.8)]"></span>
-            Fullstack Web Developer
+            <span class="w-2 h-2 rounded-full bg-emerald-400"></span>
+            Open to remote roles · Philippines (UTC+8)
         </div>
 
-        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-zinc-100 max-w-4xl leading-tight mb-6">
-            Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200">Aldrin Maquiling</span>.<br/> Fullstack Web Developer.
+        <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight text-zinc-100 max-w-4xl leading-tight mb-4">
+            Aldrin <span class="text-emerald-400">Maquiling</span>
         </h1>
+        <p class="text-xl md:text-2xl font-semibold text-zinc-200 mb-6">Fullstack Developer · Java/Spring Boot + Vue.js/TypeScript</p>
 
-        <p class="text-lg md:text-xl text-zinc-400 max-w-2xl font-normal leading-relaxed mb-10">
-            Fullstack developer with 3+ years building Java/Spring Boot backends and Vue.js/TypeScript frontends. Focused on reliable REST APIs, reusable UI, and automated testing that cut manual QA effort.
+        <p class="text-lg text-zinc-300 max-w-2xl leading-relaxed mb-8">
+            3+ years building Java/Spring Boot backends and Vue.js/TypeScript frontends. I focus on reliable REST APIs, reusable UI, and automated testing that cuts manual QA effort.
         </p>
 
+        <dl class="grid grid-cols-2 sm:grid-cols-4 gap-3 w-full max-w-3xl mb-10">
+            <div class="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 flex flex-col-reverse gap-1">
+                <dt class="text-xs text-zinc-400">REST APIs built</dt>
+                <dd class="text-2xl font-bold text-zinc-100">30+</dd>
+            </div>
+            <div class="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 flex flex-col-reverse gap-1">
+                <dt class="text-xs text-zinc-400">Reusable Vue.js components</dt>
+                <dd class="text-2xl font-bold text-zinc-100">15+</dd>
+            </div>
+            <div class="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 flex flex-col-reverse gap-1">
+                <dt class="text-xs text-zinc-400">Selenium tests written</dt>
+                <dd class="text-2xl font-bold text-zinc-100">20+</dd>
+            </div>
+            <div class="p-4 rounded-xl bg-zinc-900/60 border border-zinc-800 flex flex-col-reverse gap-1">
+                <dt class="text-xs text-zinc-400">Less manual testing</dt>
+                <dd class="text-2xl font-bold text-emerald-400">30%</dd>
+            </div>
+        </dl>
+
         <div class="flex flex-wrap items-center gap-4">
-            <a href="#projects" class="px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold text-sm transition-all flex items-center gap-2 shadow-[0_0_15px_rgba(16,185,129,0.2)]">
-                <span>Explore Work</span>
-                <i class="fas fa-arrow-down text-xs"></i>
+            <a href="#projects" class="px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold text-sm transition-colors flex items-center gap-2">
+                <span>View selected work</span>
+                <svg class="icon text-xs" aria-hidden="true"><use href="#i-arrow-down"/></svg>
             </a>
-            <a href="MAQUILING_ALDRIN_RESUME.pdf" target="_blank" class="px-6 py-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800 text-zinc-200 font-medium text-sm transition-all flex items-center gap-2">
-                <i class="fas fa-file-pdf"></i>
-                <span>View Resume</span>
+            <a href="MAQUILING_ALDRIN_RESUME.pdf" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800 text-zinc-200 font-medium text-sm transition-all flex items-center gap-2">
+                <svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>
+                <span>Resume (PDF)</span>
             </a>
         </div>
     </section>
 
-    <section id="experience" class="py-16 border-t border-zinc-800/80 scroll-mt-20">
-        <div class="flex flex-col sm:flex-row sm:items-end justify-between mb-12 gap-4">
-            <div>
-                <h2 class="text-2xl font-bold tracking-tight text-zinc-100">Professional Experience</h2>
-                <p class="text-zinc-400 text-sm mt-1">3+ years building Java/Spring Boot backends and Vue.js/TypeScript frontends.</p>
-            </div>
-            <span class="text-xs font-mono px-3 py-1 rounded-full bg-zinc-900 border border-zinc-800 text-emerald-400 whitespace-nowrap self-start sm:self-auto">Remote / PH</span>
+    <section id="experience" class="py-16 border-t border-zinc-800/80 scroll-mt-32 md:scroll-mt-20">
+        <div class="mb-10">
+            <h2 class="text-2xl font-bold tracking-tight text-zinc-100">Professional Experience</h2>
+            <p class="text-zinc-400 text-sm mt-1">Backend services, frontend features, and automated tests for a commercial product.</p>
         </div>
 
-        <div class="grid grid-cols-1 gap-6">
-            <div class="group p-8 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-900/60 transition-all duration-300">
-                <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-6">
-                    <div>
-                        <div class="flex items-center gap-3">
-                            <h3 class="text-xl font-bold text-zinc-100">Fullstack Developer</h3>
-                            <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Current</span>
-                        </div>
-                        <p class="text-emerald-400 font-medium text-sm mt-1">mykuan.app — Remote</p>
+        <article class="p-6 md:p-8 rounded-2xl bg-zinc-900/40 border border-zinc-800">
+            <div class="flex flex-col md:flex-row md:items-start justify-between gap-4 mb-8">
+                <div>
+                    <div class="flex items-center gap-3">
+                        <h3 class="text-xl font-bold text-zinc-100">Fullstack Developer</h3>
+                        <span class="px-2.5 py-0.5 rounded-full text-xs font-mono bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Current</span>
                     </div>
-                    <span class="text-xs font-mono text-zinc-400 bg-zinc-900/80 px-3 py-1.5 rounded-lg border border-zinc-800 self-start">June 2023 – Present</span>
+                    <p class="text-sm mt-1"><a href="https://mykuan.app/" target="_blank" rel="noopener noreferrer" class="text-emerald-400 hover:text-emerald-300 font-medium">mykuan.app</a> <span class="text-zinc-400">· KUAN, commercial product · Remote</span></p>
                 </div>
+                <span class="text-xs font-mono text-zinc-400 bg-zinc-900/80 px-3 py-1.5 rounded-lg border border-zinc-800 self-start whitespace-nowrap">June 2023 – Present</span>
+            </div>
 
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4 mb-2">
-                    <div class="p-5 rounded-xl bg-zinc-800/20 border border-zinc-800/60">
-                        <span class="text-xs font-mono text-emerald-400 block mb-1">Commercial Product</span>
-                        <h4 class="font-bold text-zinc-200 text-lg mb-1">KUAN</h4>
-                        <p class="text-sm text-zinc-400 mb-4">Fullstack development for mykuan.app — scalable backend services, reusable Vue.js UI, and automated testing across client-server flows.</p>
-                        <a href="https://mykuan.app/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 transition-colors font-semibold group/link">
-                            <i class="fas fa-external-link-alt text-[10px] group-hover/link:-translate-y-0.5 group-hover/link:translate-x-0.5 transition-transform"></i> Visit mykuan.app
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-6">
+                <div>
+                    <h4 class="text-xs font-mono text-emerald-400 uppercase tracking-wider mb-2">Backend</h4>
+                    <p class="text-sm text-zinc-300 leading-relaxed">Built 30+ REST APIs and CRUD flows in Java and Spring Boot for scalable backend services and client-server interaction.</p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-mono text-emerald-400 uppercase tracking-wider mb-2">Architecture</h4>
+                    <p class="text-sm text-zinc-300 leading-relaxed">Built a Node.js middleware PoC to test advanced data sync approaches and guide later architecture choices.</p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-mono text-emerald-400 uppercase tracking-wider mb-2">Frontend</h4>
+                    <p class="text-sm text-zinc-300 leading-relaxed">Built 15+ reusable Vue.js components and UI mock-ups for dynamic frontend needs.</p>
+                </div>
+                <div>
+                    <h4 class="text-xs font-mono text-emerald-400 uppercase tracking-wider mb-2">Quality</h4>
+                    <p class="text-sm text-zinc-300 leading-relaxed">Wrote 20+ Selenium tests, raising coverage and cutting manual testing by 30%.</p>
+                </div>
+                <div class="md:col-span-2">
+                    <h4 class="text-xs font-mono text-emerald-400 uppercase tracking-wider mb-2">Team</h4>
+                    <p class="text-sm text-zinc-300 leading-relaxed">Worked with cross-functional teams in Agile/Scrum on sprint planning, delivery, and ongoing improvements.</p>
+                </div>
+            </div>
+        </article>
+    </section>
+
+    <section id="projects" class="defer-render py-16 border-t border-zinc-800/80 scroll-mt-32 md:scroll-mt-20">
+        <div class="mb-10">
+            <h2 class="text-2xl font-bold tracking-tight text-zinc-100">Selected Work</h2>
+            <p class="text-zinc-400 text-sm mt-1">Live apps people use today, a thesis build, and a business site.</p>
+        </div>
+
+        <!-- Featured: GoFindPro -->
+        <article class="grid grid-cols-1 lg:grid-cols-5 rounded-2xl bg-zinc-900/40 border border-zinc-800 overflow-hidden">
+            <a href="https://gofindpro.vercel.app/" target="_blank" rel="noopener noreferrer" class="lg:col-span-3 block bg-zinc-800" aria-label="Open GoFindPro">
+                <img src="assets/img/gofindpro.webp" srcset="assets/img/gofindpro-480.webp 480w, assets/img/gofindpro.webp 960w" sizes="(min-width: 1024px) 690px, 100vw" alt="GoFindPro map of Surigao del Sur with trade search and a cluster of worker pins in Cagwait" width="960" height="600" class="w-full h-full object-cover">
+            </a>
+            <div class="lg:col-span-2 p-6 md:p-8">
+                <span class="text-xs font-mono text-emerald-400">Personal Project · Live App</span>
+                <h3 class="text-2xl font-bold text-zinc-100 mt-2">GoFindPro</h3>
+                <p class="text-sm text-zinc-400 mt-3 leading-relaxed"><span class="text-zinc-200 font-medium">Problem:</span> in Cagwait, Surigao del Sur, finding a plumber or electrician means asking around in chat groups and passing along old phone numbers.</p>
+                <ul class="text-sm text-zinc-300 mt-4 space-y-2 list-disc pl-5 marker:text-emerald-500">
+                    <li>Leaflet map with marker clustering, trade-coloured pins, and a Map/List view sorted by distance.</li>
+                    <li>Search that matches names, trades, and local terms like “tubero”.</li>
+                    <li>Worker profiles with call, SMS, directions, shareable links, and review submission. No sign-up needed.</li>
+                </ul>
+                <ul class="flex flex-wrap gap-2 mt-5" aria-label="Tech stack">
+                    <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">Vue 3</li>
+                    <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">TypeScript</li>
+                    <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">Pinia</li>
+                    <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">Leaflet</li>
+                    <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">Tailwind CSS</li>
+                </ul>
+                <a href="https://gofindpro.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-6 min-h-11 text-sm font-semibold text-emerald-400 hover:text-emerald-300">
+                    Explore GoFindPro <svg class="icon text-xs" aria-hidden="true"><use href="#i-external"/></svg>
+                </a>
+            </div>
+        </article>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-6">
+            <article class="rounded-2xl bg-zinc-900/40 border border-zinc-800 overflow-hidden flex flex-col">
+                <a href="https://dink-spot.vercel.app/" target="_blank" rel="noopener noreferrer" class="block bg-zinc-800" aria-label="Open DinkSpot">
+                    <img src="assets/img/dinkspot.webp" srcset="assets/img/dinkspot-480.webp 480w, assets/img/dinkspot.webp 960w" sizes="(min-width: 768px) 540px, 100vw" alt="DinkSpot landing page with Open the Map and Download App buttons" width="960" height="600" loading="lazy" class="w-full aspect-[16/10] object-cover object-top">
+                </a>
+                <div class="p-6 flex flex-col flex-1">
+                    <span class="text-xs font-mono text-emerald-400">Personal Project · Live PWA</span>
+                    <h3 class="text-xl font-bold text-zinc-100 mt-2">DinkSpot</h3>
+                    <p class="text-sm text-zinc-300 mt-3 leading-relaxed">A community-built map for finding pickleball courts. I built court search with indoor/outdoor filters, a Suggest Edit flow so players can correct court details, and an installable PWA with an offline service worker.</p>
+                    <ul class="flex flex-wrap gap-2 mt-5" aria-label="Tech stack">
+                        <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">React</li>
+                        <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">TypeScript</li>
+                        <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">Leaflet</li>
+                        <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">Workbox PWA</li>
+                    </ul>
+                    <a href="https://dink-spot.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-auto pt-5 min-h-11 text-sm font-semibold text-emerald-400 hover:text-emerald-300">
+                        Explore DinkSpot <svg class="icon text-xs" aria-hidden="true"><use href="#i-external"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <article class="rounded-2xl bg-zinc-900/40 border border-zinc-800 overflow-hidden flex flex-col">
+                <a href="https://www.weathercheck.online/" target="_blank" rel="noopener noreferrer" class="block bg-zinc-800" aria-label="Open WeatherCheck">
+                    <img src="assets/img/weathercheck.webp" srcset="assets/img/weathercheck-480.webp 480w, assets/img/weathercheck.webp 960w" sizes="(min-width: 768px) 540px, 100vw" alt="WeatherCheck rain layer over the Philippines showing a storm system to the east" width="960" height="600" loading="lazy" class="w-full aspect-[16/10] object-cover">
+                </a>
+                <div class="p-6 flex flex-col flex-1">
+                    <span class="text-xs font-mono text-emerald-400">Personal Project · Live PWA</span>
+                    <h3 class="text-xl font-bold text-zinc-100 mt-2">WeatherCheck</h3>
+                    <p class="text-sm text-zinc-300 mt-3 leading-relaxed">A weather visualization PWA for the Philippines. I integrated the Windy API for rain, wind, and storm data, built the responsive UI and install flow, and configured metadata for search discovery.</p>
+                    <ul class="flex flex-wrap gap-2 mt-5" aria-label="Tech stack">
+                        <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">Vue 3</li>
+                        <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">TypeScript</li>
+                        <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">Tailwind CSS</li>
+                        <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">Windy API</li>
+                    </ul>
+                    <a href="https://www.weathercheck.online/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-auto pt-5 min-h-11 text-sm font-semibold text-emerald-400 hover:text-emerald-300">
+                        Explore WeatherCheck <svg class="icon text-xs" aria-hidden="true"><use href="#i-external"/></svg>
+                    </a>
+                </div>
+            </article>
+
+            <article class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800">
+                <span class="text-xs font-mono text-emerald-400">2025 Thesis · Lead Developer</span>
+                <h3 class="text-xl font-bold text-zinc-100 mt-2">Growgreen</h3>
+                <p class="text-sm text-zinc-300 mt-3 leading-relaxed">I led the fullstack build of a virtual tree experience connected to real conservation activities: a Java/Spring Boot backend, a Vue.js/TypeScript PWA, and Google OAuth2 authentication.</p>
+                <ul class="flex flex-wrap gap-2 mt-5" aria-label="Tech stack">
+                    <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">Spring Boot</li>
+                    <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">Vue.js</li>
+                    <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">TypeScript</li>
+                    <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">OAuth2</li>
+                </ul>
+                <p class="text-xs text-zinc-400 mt-4">The frontend preview is live; the backend is not deployed, so the full workflow can't be tried today.</p>
+                <div class="grid grid-cols-2 gap-3 mt-5">
+                    <figure class="min-w-0">
+                        <a href="assets/img/growgreen-tree.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size Growgreen virtual tree screenshot" class="block rounded-lg overflow-hidden">
+                            <img src="assets/img/growgreen-tree-360.webp" srcset="assets/img/growgreen-tree-360.webp 360w, assets/img/growgreen-tree.webp 720w" sizes="(min-width: 768px) 260px, 45vw" alt="Growgreen virtual Narra tree screen with growth controls and inventory" width="720" height="1446" loading="lazy" class="w-full h-64 sm:h-80 object-cover object-top bg-zinc-800">
                         </a>
-                    </div>
-                    <div class="p-5 rounded-xl bg-zinc-800/20 border border-zinc-800/60 flex flex-col justify-between">
-                        <div>
-                            <span class="text-xs font-mono text-emerald-400 block mb-2">Key Contributions</span>
-                            <ul class="text-sm text-zinc-300 space-y-2 list-none pl-1">
-                                <li class="flex items-start gap-2"><span class="text-emerald-500 mt-1 text-[10px]">▹</span> Built 30+ REST APIs and CRUD flows in Java and Spring Boot for scalable backend services and client-server interaction.</li>
-                                <li class="flex items-start gap-2"><span class="text-emerald-500 mt-1 text-[10px]">▹</span> Built a Node.js middleware PoC to test advanced data sync approaches and guide later architecture choices.</li>
-                                <li class="flex items-start gap-2"><span class="text-emerald-500 mt-1 text-[10px]">▹</span> Built 15+ reusable Vue.js components and UI mock-ups for dynamic frontend needs.</li>
-                                <li class="flex items-start gap-2"><span class="text-emerald-500 mt-1 text-[10px]">▹</span> Wrote 20+ Selenium tests, raising coverage and cutting manual testing by 30%.</li>
-                                <li class="flex items-start gap-2"><span class="text-emerald-500 mt-1 text-[10px]">▹</span> Worked with cross-functional teams in Agile/Scrum on sprint planning, delivery, and ongoing improvements.</li>
-                            </ul>
-                        </div>
-                    </div>
+                        <figcaption class="text-xs text-zinc-400 mt-2">Virtual tree screen</figcaption>
+                    </figure>
+                    <figure class="min-w-0">
+                        <a href="assets/img/growgreen-eligibility.webp" target="_blank" rel="noopener noreferrer" aria-label="Open full-size Growgreen event eligibility screenshot" class="block rounded-lg overflow-hidden">
+                            <img src="assets/img/growgreen-eligibility-360.webp" srcset="assets/img/growgreen-eligibility-360.webp 360w, assets/img/growgreen-eligibility.webp 720w" sizes="(min-width: 768px) 260px, 45vw" alt="Growgreen screen showing the tree planting event eligibility result" width="720" height="1457" loading="lazy" class="w-full h-64 sm:h-80 object-cover object-top bg-zinc-800">
+                        </a>
+                        <figcaption class="text-xs text-zinc-400 mt-2">Event eligibility screen</figcaption>
+                    </figure>
                 </div>
+                <a href="https://growgreenph.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-4 min-h-11 text-sm font-semibold text-emerald-400 hover:text-emerald-300">
+                    View frontend preview <svg class="icon text-xs" aria-hidden="true"><use href="#i-external"/></svg>
+                </a>
+            </article>
+
+            <article class="rounded-2xl bg-zinc-900/40 border border-zinc-800 overflow-hidden flex flex-col">
+                <a href="https://az-renthub.vercel.app/" target="_blank" rel="noopener noreferrer" class="block bg-zinc-800" aria-label="Open A&amp;Z RentHub">
+                    <img src="assets/img/renthub.webp" srcset="assets/img/renthub-480.webp 480w, assets/img/renthub.webp 960w" sizes="(min-width: 768px) 540px, 100vw" alt="A&amp;Z RentHub hero offering a DJI Osmo Action 5 Pro for rent in Cagwait from 450 pesos a day" width="960" height="600" loading="lazy" class="w-full aspect-[16/10] object-cover">
+                </a>
+                <div class="p-6 flex flex-col flex-1">
+                    <span class="text-xs font-mono text-emerald-400">Business Website · Live Site</span>
+                    <h3 class="text-xl font-bold text-zinc-100 mt-2">A&amp;Z RentHub</h3>
+                    <p class="text-sm text-zinc-300 mt-3 leading-relaxed">A responsive rental site for an action camera business in Cagwait. Visitors can review the kit, calculate a rental price, and send a booking request. Product structured data, a sitemap, and WebP images help it show up in search.</p>
+                    <ul class="flex flex-wrap gap-2 mt-5" aria-label="Tech stack">
+                        <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">HTML/CSS/JS</li>
+                        <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">JSON-LD</li>
+                        <li class="px-2.5 py-1 rounded-md bg-zinc-800/60 border border-zinc-700/50 text-zinc-300 text-xs font-mono">SEO</li>
+                    </ul>
+                    <a href="https://az-renthub.vercel.app/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-2 mt-auto pt-5 min-h-11 text-sm font-semibold text-emerald-400 hover:text-emerald-300">
+                        Explore RentHub <svg class="icon text-xs" aria-hidden="true"><use href="#i-external"/></svg>
+                    </a>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section id="skills" class="defer-render py-16 border-t border-zinc-800/80 scroll-mt-32 md:scroll-mt-20">
+        <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10">
+            <div>
+                <h2 class="text-2xl font-bold tracking-tight text-zinc-100">Technical Skills</h2>
+                <p class="text-zinc-400 text-sm mt-1">Grouped by area, with where I've used each one.</p>
+            </div>
+            <p class="flex items-center gap-2 text-xs text-zinc-400">
+                <span class="w-2.5 h-2.5 rounded-sm bg-emerald-400" aria-hidden="true"></span> Core stack
+            </p>
+        </div>
+
+        <div class="rounded-2xl border border-zinc-800 bg-zinc-900/40 divide-y divide-zinc-800">
+            <div class="grid grid-cols-1 lg:grid-cols-[13rem_1fr_17rem] gap-4 lg:gap-8 p-6 lg:items-center">
+                <h3 class="text-sm font-mono text-emerald-400 uppercase tracking-wider">Backend &amp; Data</h3>
+                <ul class="flex flex-wrap gap-2">
+                    <li class="px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-sm font-semibold">Java</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-sm font-semibold">Spring Boot</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">REST APIs</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">Node.js</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">PostgreSQL</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">MySQL</li>
+                </ul>
+                <p class="text-sm text-zinc-400 leading-relaxed"><span class="text-zinc-200">Used in:</span> mykuan.app (30+ REST APIs, Node.js PoC), Growgreen</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-[13rem_1fr_17rem] gap-4 lg:gap-8 p-6 lg:items-center">
+                <h3 class="text-sm font-mono text-emerald-400 uppercase tracking-wider">Frontend</h3>
+                <ul class="flex flex-wrap gap-2">
+                    <li class="px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-sm font-semibold">Vue.js</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-sm font-semibold">TypeScript</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">JavaScript</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">Tailwind CSS</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">PrimeVue</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">PrimeFlex</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">HTML / CSS</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">Figma</li>
+                </ul>
+                <p class="text-sm text-zinc-400 leading-relaxed"><span class="text-zinc-200">Used in:</span> mykuan.app (15+ components), GoFindPro, WeatherCheck, Growgreen</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-[13rem_1fr_17rem] gap-4 lg:gap-8 p-6 lg:items-center">
+                <h3 class="text-sm font-mono text-emerald-400 uppercase tracking-wider">Testing &amp; DevOps</h3>
+                <ul class="flex flex-wrap gap-2">
+                    <li class="px-3 py-1.5 rounded-lg bg-emerald-500/10 border border-emerald-500/30 text-emerald-300 text-sm font-semibold">Selenium</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">Docker</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">CI/CD</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">Git</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">Nginx</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">Fail2ban</li>
+                </ul>
+                <p class="text-sm text-zinc-400 leading-relaxed"><span class="text-zinc-200">Used in:</span> mykuan.app (20+ Selenium tests, 30% less manual testing)</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-[13rem_1fr_17rem] gap-4 lg:gap-8 p-6 lg:items-center">
+                <h3 class="text-sm font-mono text-emerald-400 uppercase tracking-wider">Maps &amp; PWAs</h3>
+                <ul class="flex flex-wrap gap-2">
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">Leaflet</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">PWA / Workbox</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">Pinia</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">React</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">Vite</li>
+                </ul>
+                <p class="text-sm text-zinc-400 leading-relaxed"><span class="text-zinc-200">Used in:</span> GoFindPro, DinkSpot, WeatherCheck</p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-[13rem_1fr_17rem] gap-4 lg:gap-8 p-6 lg:items-center">
+                <h3 class="text-sm font-mono text-emerald-400 uppercase tracking-wider">AI-Assisted Workflow</h3>
+                <ul class="flex flex-wrap gap-2">
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">Claude</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">Cursor</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">Gemini</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">ChatGPT</li>
+                    <li class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-sm">OpenCode</li>
+                </ul>
             </div>
         </div>
     </section>
 
-    <section id="projects" class="py-16 border-t border-zinc-800/80 scroll-mt-20">
-        <div class="mb-12">
-            <h2 class="text-2xl font-bold tracking-tight text-zinc-100">Featured Projects</h2>
-            <p class="text-zinc-400 text-sm mt-1">Production web apps, system architectures, and thesis research case studies.</p>
+    <section id="about" class="defer-render py-16 border-t border-zinc-800/80 scroll-mt-32 md:scroll-mt-20">
+        <div class="mb-10">
+            <h2 class="text-2xl font-bold tracking-tight text-zinc-100">Education</h2>
         </div>
 
         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-
-            <!-- GoFindPro -->
-            <div class="group p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/50 transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center justify-between mb-4">
-                        <span class="text-xs font-mono px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Live App</span>
-                        <a href="https://gofindpro.vercel.app/" target="_blank" aria-label="Open GoFindPro" class="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center text-zinc-300 hover:text-emerald-400 hover:bg-zinc-700 transition-colors">
-                            <i class="fas fa-external-link-alt text-xs"></i>
-                        </a>
-                    </div>
-                    <h3 class="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors">GoFindPro</h3>
-                    <p class="text-sm text-zinc-400 mt-2 mb-4 leading-relaxed">Hyper-local map for Cagwait connecting residents with on-call skilled trade workers. Call, text, or get directions in one tap — no login required.</p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">Vue 3</span>
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">TypeScript</span>
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">Leaflet</span>
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">Tailwind</span>
-                    </div>
-                </div>
-                <a href="https://gofindpro.vercel.app/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 font-semibold group/link">
-                    <span>Visit GoFindPro</span>
-                    <i class="fas fa-arrow-right text-[10px] group-hover/link:translate-x-1 transition-transform"></i>
-                </a>
-            </div>
-
-            <!-- WeatherCheck -->
-            <div class="group p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/50 transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center justify-between mb-4">
-                        <span class="text-xs font-mono px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Live PWA</span>
-                        <a href="https://www.weathercheck.online/" target="_blank" aria-label="Open WeatherCheck" class="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center text-zinc-300 hover:text-emerald-400 hover:bg-zinc-700 transition-colors">
-                            <i class="fas fa-external-link-alt text-xs"></i>
-                        </a>
-                    </div>
-                    <h3 class="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors">WeatherCheck</h3>
-                    <p class="text-sm text-zinc-400 mt-2 mb-4 leading-relaxed">Developed a real-time weather tracking Progressive Web App (PWA) utilizing Vue.js and Tailwind CSS, delivering a highly responsive layout. Integrated the Windy API for dynamic atmospheric data, with custom UI components for rain, wind, and storm metrics, plus SEO meta-tag configuration for discoverability.</p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">Vue.js</span>
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">Tailwind CSS</span>
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">REST API</span>
-                    </div>
-                </div>
-                <a href="https://www.weathercheck.online/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 font-semibold group/link">
-                    <span>Visit WeatherCheck</span>
-                    <i class="fas fa-arrow-right text-[10px] group-hover/link:translate-x-1 transition-transform"></i>
-                </a>
-            </div>
-
-            <!-- RentHub -->
-            <div class="group p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/50 transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center justify-between mb-4">
-                        <span class="text-xs font-mono px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Live App</span>
-                        <a href="https://az-renthub.vercel.app/" target="_blank" aria-label="Open RentHub" class="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center text-zinc-300 hover:text-emerald-400 hover:bg-zinc-700 transition-colors">
-                            <i class="fas fa-external-link-alt text-xs"></i>
-                        </a>
-                    </div>
-                    <h3 class="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors">RentHub</h3>
-                    <p class="text-sm text-zinc-400 mt-2 mb-4 leading-relaxed">Developed a modern, responsive business landing page utilizing HTML and Tailwind CSS to establish a professional online presence and showcase core services. Optimized site discoverability with targeted SEO meta-tag configurations.</p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">HTML</span>
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">Tailwind CSS</span>
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">SEO</span>
-                    </div>
-                </div>
-                <a href="https://az-renthub.vercel.app/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 font-semibold group/link">
-                    <span>Visit RentHub</span>
-                    <i class="fas fa-arrow-right text-[10px] group-hover/link:translate-x-1 transition-transform"></i>
-                </a>
-            </div>
-
-            <!-- Dink Spot -->
-            <div class="group p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/50 transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center justify-between mb-4">
-                        <span class="text-xs font-mono px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">Live PWA</span>
-                        <a href="https://dink-spot.vercel.app/" target="_blank" aria-label="Open Dink Spot" class="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center text-zinc-300 hover:text-emerald-400 hover:bg-zinc-700 transition-colors">
-                            <i class="fas fa-external-link-alt text-xs"></i>
-                        </a>
-                    </div>
-                    <h3 class="text-lg font-bold text-zinc-100 group-hover:text-emerald-400 transition-colors">Dink Spot</h3>
-                    <p class="text-sm text-zinc-400 mt-2 mb-4 leading-relaxed">A Progressive Web App (PWA) that displays pickleball courts on an interactive map, helping users easily discover local spots to play.</p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">React</span>
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">Maps API</span>
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">Tailwind</span>
-                    </div>
-                </div>
-                <a href="https://dink-spot.vercel.app/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-mono text-emerald-400 hover:text-emerald-300 font-semibold group/link">
-                    <span>Visit Dink Spot</span>
-                    <i class="fas fa-arrow-right text-[10px] group-hover/link:translate-x-1 transition-transform"></i>
-                </a>
-            </div>
-
-            <!-- Growgreen (Thesis) -->
-            <div class="group p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/50 transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center justify-between mb-4">
-                        <span class="text-xs font-mono px-2.5 py-1 rounded bg-amber-500/10 text-amber-400 border border-amber-500/20">Thesis Project</span>
-                        <a href="https://growgreenph.vercel.app/" target="_blank" aria-label="Open Growgreen" class="w-8 h-8 rounded-lg bg-zinc-800 flex items-center justify-center text-zinc-300 hover:text-amber-400 hover:bg-zinc-700 transition-colors">
-                            <i class="fas fa-external-link-alt text-xs"></i>
-                        </a>
-                    </div>
-                    <h3 class="text-lg font-bold text-zinc-100 group-hover:text-amber-400 transition-colors">Growgreen</h3>
-                    <p class="text-sm text-zinc-400 mt-2 mb-3 leading-relaxed">Spearheaded full-stack development of an interactive environmental sustainability platform as Lead Developer. Architected a Java/Spring Boot backend for a gamified conservation system, engineered a Vue.js/TypeScript PWA, and integrated Google OAuth2 for secure authentication.</p>
-
-                    <!-- ADDED: Professional warning badge for offline backend -->
-                    <div class="flex items-center gap-2 mb-4 text-[11px] font-mono text-amber-500/80 bg-amber-500/5 px-2.5 py-1.5 rounded border border-amber-500/10 w-fit">
-                        <i class="fas fa-info-circle"></i>
-                        <span>Live demo is frontend-only (Backend spun down to minimize cloud costs)</span>
-                    </div>
-
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">Java/Spring Boot</span>
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">Vue.js/TypeScript</span>
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">OAuth2</span>
-                    </div>
-                </div>
-                <a href="https://growgreenph.vercel.app/" target="_blank" class="inline-flex items-center gap-1.5 text-xs font-mono text-amber-400 hover:text-amber-300 font-semibold group/link">
-                    <span>Visit Growgreen</span>
-                    <i class="fas fa-arrow-right text-[10px] group-hover/link:translate-x-1 transition-transform"></i>
-                </a>
-            </div>
-
-            <!-- YourCloud -->
-            <div class="group p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700 hover:-translate-y-1 hover:shadow-xl hover:shadow-black/50 transition-all duration-300 flex flex-col justify-between">
-                <div>
-                    <div class="flex items-center justify-between mb-4">
-                        <span class="text-xs font-mono px-2.5 py-1 rounded bg-blue-500/10 text-blue-400 border border-blue-500/20">Academic PWA</span>
-                        <span class="w-8 h-8 rounded-lg bg-zinc-800/50 flex items-center justify-center text-zinc-500">
-                                <i class="fas fa-lock text-xs"></i>
-                            </span>
-                    </div>
-                    <h3 class="text-lg font-bold text-zinc-100 group-hover:text-blue-400 transition-colors">YourCloud</h3>
-                    <p class="text-sm text-zinc-400 mt-2 mb-4 leading-relaxed">A Progressive Web App (PWA) cloud storage platform developed for NEMSU students to securely manage, upload, and organize files.</p>
-                    <div class="flex flex-wrap gap-2 mb-6">
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">Java/Springboot</span>
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">Vue.js/Typescript</span>
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">PostgreSQL</span>
-                        <span class="text-[11px] font-mono px-2.5 py-1 rounded bg-zinc-800/80 text-zinc-300 border border-zinc-700/50">Cloudinary</span>
-                    </div>
-                </div>
-                <div class="inline-flex items-center gap-1.5 text-xs font-mono text-zinc-500 transition-colors">
-                    <i class="fas fa-lock text-[10px]"></i> Private Repository
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-    <section id="skills" class="py-16 border-t border-zinc-800/80 scroll-mt-20">
-        <div class="mb-12">
-            <h2 class="text-2xl font-bold tracking-tight text-zinc-100">Technical Expertise</h2>
-            <p class="text-zinc-400 text-sm mt-1">Core programming languages, frameworks, and developer tooling.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Backend & Databases -->
-            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700 transition-colors">
-                <h3 class="text-sm font-mono text-emerald-400 uppercase tracking-wider mb-4">Backend & Databases</h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">Java</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">Spring Boot</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">Node.js</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">PostgreSQL</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">MySQL</span>
-                </div>
-            </div>
-
-            <!-- Frontend -->
-            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700 transition-colors">
-                <h3 class="text-sm font-mono text-emerald-400 uppercase tracking-wider mb-4">Frontend</h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">Vue.js</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">TypeScript</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">JavaScript</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">Tailwind CSS</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">PrimeVue</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">PrimeFlex</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">HTML / CSS</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">Figma</span>
-                </div>
-            </div>
-
-            <!-- DevOps & Tools -->
-            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700 transition-colors">
-                <h3 class="text-sm font-mono text-emerald-400 uppercase tracking-wider mb-4">DevOps & Tools</h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">Nginx</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">Fail2ban</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">Docker</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">Git</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">CI/CD</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default">Selenium</span>
-                </div>
-            </div>
-
-            <!-- AI-assisted workflow -->
-            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700 transition-colors">
-                <h3 class="text-sm font-mono text-emerald-400 uppercase tracking-wider mb-4">AI-Assisted Workflow</h3>
-                <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default border-emerald-500/30">Claude</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default border-emerald-500/30">Cursor</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default border-emerald-500/30">Gemini</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default border-emerald-500/30">ChatGPT</span>
-                    <span class="px-3 py-1.5 rounded-lg bg-zinc-800/50 border border-zinc-700/50 text-zinc-200 text-xs font-medium hover:bg-emerald-500/10 hover:border-emerald-500/30 hover:text-emerald-400 transition-all cursor-default border-emerald-500/30">OpenCode</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="about" class="py-16 border-t border-zinc-800/80 scroll-mt-20">
-        <div class="mb-12">
-            <h2 class="text-2xl font-bold tracking-tight text-zinc-100">Education & Honors</h2>
-            <p class="text-zinc-400 text-sm mt-1">Academic background, competitive programming, and startup pitching awards.</p>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <!-- Education 1 - Graduated -->
-            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700 transition-colors">
+            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800">
                 <span class="text-xs font-mono text-emerald-400 block mb-1">2022 – 2025 · Graduated</span>
                 <h3 class="font-bold text-zinc-100 text-lg">Bachelor of Science in Computer Science</h3>
+                <p class="text-sm text-zinc-400 mt-1">North Eastern Mindanao State University — Rosario, Tandag, Surigao del Sur</p>
+            </div>
+
+            <div class="p-6 rounded-2xl border border-zinc-800/60">
+                <span class="text-xs font-mono text-zinc-400 block mb-1">2018 – 2021 · Coursework through 3rd year</span>
+                <h3 class="font-semibold text-zinc-300 text-lg">BS Information Technology (coursework)</h3>
                 <p class="text-sm text-zinc-400 mt-1">Jose Rizal University — Mandaluyong, Metro Manila</p>
-            </div>
-
-            <!-- Education 2 - Incomplete -->
-            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700 transition-colors">
-                <span class="text-xs font-mono text-emerald-400 block mb-1">2018 – 2021 · Incomplete</span>
-                <h3 class="font-bold text-zinc-100 text-lg">Bachelor of Science in Information Technology</h3>
-                <p class="text-sm text-zinc-400 mt-1">North Eastern Mindanao State University — Rosario, Tandag, Surigao del Sur · Coursework through 3rd year</p>
-            </div>
-
-            <!-- Regional Programming Award -->
-            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700 transition-colors">
-                <span class="text-xs font-mono text-emerald-400 block mb-1">Regional Award • Technical</span>
-                <h3 class="font-bold text-zinc-100 text-lg">2nd Placer - Programming Contest</h3>
-                <p class="text-sm text-zinc-400 mt-1">11th ICT Student Congress and Skills Competition (Caraga Region, 2024)</p>
-            </div>
-
-            <!-- Regional Pitching Award -->
-            <div class="p-6 rounded-2xl bg-zinc-900/40 border border-zinc-800 hover:border-zinc-700 transition-colors">
-                <span class="text-xs font-mono text-emerald-400 block mb-1">Regional Award - Tech & Business</span>
-                <h3 class="font-bold text-zinc-100 text-lg">2nd Runner Up - Startup Pitching</h3>
-                <p class="text-sm text-zinc-400 mt-1">Department of Information and Communications Technology (DICT) Caraga Region 2024</p>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-16 border-t border-zinc-800/80 text-center scroll-mt-20">
+    <section id="contact" class="defer-render py-16 border-t border-zinc-800/80 text-center scroll-mt-32 md:scroll-mt-20">
         <div class="max-w-2xl mx-auto">
-            <h2 class="text-3xl font-bold tracking-tight text-zinc-100 mb-4">Let's Build Something Together</h2>
-            <p class="text-zinc-400 mb-8">Whether you have an engineering role, a freelance project, or want to discuss backend architectures, my inbox is open.</p>
+            <h2 class="text-3xl font-bold tracking-tight text-zinc-100 mb-4">Hiring a remote fullstack developer?</h2>
+            <p class="text-zinc-400 mb-8">I'm open to remote Java/Spring Boot + Vue.js roles. I'm based in the Philippines (UTC+8). Email me and I'll get back to you.</p>
 
             <div class="flex flex-wrap items-center justify-center gap-4">
-                <a href="mailto:maquiling.aa@gmail.com" class="px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold text-sm transition-all shadow-[0_0_15px_rgba(16,185,129,0.2)] hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] flex items-center gap-2">
-                    <i class="fas fa-envelope"></i>
+                <a href="mailto:maquiling.aa@gmail.com" class="px-6 py-3 rounded-xl bg-emerald-500 hover:bg-emerald-400 text-zinc-950 font-semibold text-sm transition-colors flex items-center gap-2">
+                    <svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg>
                     <span>maquiling.aa@gmail.com</span>
                 </a>
-                <a href="https://github.com/aldrinMaq" target="_blank" class="px-6 py-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800 text-zinc-200 font-medium text-sm transition-all flex items-center gap-2">
-                    <i class="fab fa-github"></i>
+                <a href="MAQUILING_ALDRIN_RESUME.pdf" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800 text-zinc-200 font-medium text-sm transition-all flex items-center gap-2">
+                    <svg class="icon" aria-hidden="true"><use href="#i-file"/></svg>
+                    <span>Resume (PDF)</span>
+                </a>
+                <a href="https://github.com/aldrinMaq" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-zinc-900 border border-zinc-800 hover:border-zinc-700 hover:bg-zinc-800 text-zinc-200 font-medium text-sm transition-all flex items-center gap-2">
+                    <svg class="icon" aria-hidden="true"><use href="#i-github"/></svg>
                     <span>GitHub</span>
                 </a>
             </div>
@@ -425,14 +412,55 @@
 
 <footer class="border-t border-zinc-800/80 py-8 bg-zinc-950">
     <div class="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-4 text-xs font-mono text-zinc-400">
-        <p>© 2026 Aldrin Maquiling. All rights reserved.</p>
+        <p>© 2026 Aldrin Maquiling</p>
         <div class="flex items-center gap-6">
-            <a href="https://github.com/aldrinMaq" target="_blank" class="hover:text-emerald-400 transition-colors">GitHub</a>
+            <a href="https://github.com/aldrinMaq" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors">GitHub</a>
             <a href="mailto:maquiling.aa@gmail.com" class="hover:text-emerald-400 transition-colors">Email</a>
-            <a href="#projects" class="hover:text-emerald-400 transition-colors">Projects</a>
+            <a href="MAQUILING_ALDRIN_RESUME.pdf" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-400 transition-colors">Resume</a>
         </div>
     </div>
 </footer>
 
+<script>
+    const sectionIds = ['experience', 'projects', 'skills', 'about', 'contact'];
+    const sectionLinks = [...document.querySelectorAll('header nav a[href^="#"]')]
+        .filter(link => sectionIds.includes(link.hash.slice(1)));
+    const sections = sectionIds.map(id => document.getElementById(id));
+    let activeUpdateScheduled = false;
+
+    function updateActiveSection() {
+        const marker = document.querySelector('header').getBoundingClientRect().bottom + 48;
+        let activeId = null;
+
+        for (const section of sections) {
+            if (section.getBoundingClientRect().top <= marker) activeId = section.id;
+        }
+
+        if (window.scrollY + window.innerHeight >= document.documentElement.scrollHeight - 2) {
+            activeId = 'contact';
+        }
+
+        for (const link of sectionLinks) {
+            if (link.hash.slice(1) === activeId) {
+                link.setAttribute('aria-current', 'location');
+            } else {
+                link.removeAttribute('aria-current');
+            }
+        }
+
+        activeUpdateScheduled = false;
+    }
+
+    function scheduleActiveSectionUpdate() {
+        if (activeUpdateScheduled) return;
+        activeUpdateScheduled = true;
+        requestAnimationFrame(updateActiveSection);
+    }
+
+    window.addEventListener('scroll', scheduleActiveSectionUpdate, { passive: true });
+    window.addEventListener('resize', scheduleActiveSectionUpdate);
+    window.addEventListener('load', scheduleActiveSectionUpdate);
+    scheduleActiveSectionUpdate();
+</script>
 </body>
 </html>
