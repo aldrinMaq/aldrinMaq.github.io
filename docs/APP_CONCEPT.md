@@ -33,7 +33,7 @@ Single page sections: Hero, Experience, Selected Work, Skills, Education, Contac
 
 Target reader: hiring managers and recruiters for remote Java/Spring Boot + Vue.js/TypeScript roles. The hero names the stack, shows "open to remote · UTC+8", and repeats the resume numbers as stat tiles.
 
-Selected Work features GoFindPro as a wide card (screenshot, problem, what I built, stack chips), followed by DinkSpot, WeatherCheck, Growgreen, and A&Z RentHub. Every live project has a screenshot in `assets/img/` (WebP, with 480px variants). DinkSpot links to its root URL because `/map` 404s on direct load. Growgreen shows two screenshots from the working 2025 thesis build (virtual tree and event eligibility); its frontend preview is available, but its backend is not deployed. The activity map screenshot is excluded because its displayed totals have not been verified as real-world results.
+Selected Work features GoFindPro as a wide card (screenshot, problem, what I built, stack chips), followed by WeatherCheck, DinkSpot, Growgreen, and A&Z RentHub (in that order). Every live project has a screenshot in `assets/img/` (WebP, with 480px variants). DinkSpot links to its root URL because `/map` 404s on direct load. Growgreen shows two screenshots from the working 2025 thesis build (virtual tree and event eligibility); its frontend preview is available, but its backend is not deployed. The activity map screenshot is excluded because its displayed totals have not been verified as real-world results.
 
 ## Features
 
